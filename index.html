@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SubLight Engines</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
@@ -16,23 +18,35 @@
 
     <header>
         <img src="assets/logo_sublight.svg" alt="SubLightEngines-logo">
-        
-            <nav id="nav">
-                
-                    
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item">
                         <a href="#why_us" class="nav-links">OUR SERVICES</a>
-                   
+                    </li>
+                    
+                    <li class="nav-item"> 
                         <a href="#product_line" class="nav-links">OUR PRODUCTS</a>
+                    </li>
                     
+                    <li class="nav-item">     
                         <a href="#products_description" class="nav-links">ABOUT US</a>
+                    </li>
                     
+                    <li class="nav-item">     
                         <a href="#contact" class="nav-links">CONTACT US</a>
-                    
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
             
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>menu
-            </a>
+            <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                 <i class="fa fa-bars"></i>menu
+                
+            </a> -->`
     </header>
 
 <!-- END OF HEADER SECTION -->
@@ -203,7 +217,7 @@
                     </div>
                 </div>
 
-                <input type="button" id="submit" value="SUBMIT">
+                <input type="submit" id="submit" value="SUBMIT">
             </form>
         </div>
 
@@ -235,7 +249,7 @@
         </footer>
     </main>
 </body>
-<script>
+<!-- <script>
     function myFunction() {
       var x = document.getElementById("nav");
       if (x.style.display === "block") {
@@ -244,5 +258,7 @@
         x.style.display = "block";
       }
     }
-    </script> 
+    </script>  -->
+    <script src="form_validation.js"></script>
+    <script src="mobile-nav.js"></script>
 </html>
